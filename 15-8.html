@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    
+    <head>
+<title>jQuery</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript"></script>
+        <style>
+            .select{
+                background:red;
+            }
+        </style>
+    </head>
+<body>
+    <ul>
+      <li>HOME</li>
+      <li>Portfolio</li>
+      <li>About</li>
+      <li class="select">Contact</li>
+    </ul>
+    
+    <script>
+    $(function(){
+    var attr = $('li').last().attr('class');
+        console.log(attr);
+        $('li').first().attr('style','border:3px solid');
+    });
+    </script>
+    
+    </body>
+</html>

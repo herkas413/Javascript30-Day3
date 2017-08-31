@@ -1,0 +1,37 @@
+<!doctype html>
+<html>
+    
+    <head>
+    </head>
+<body>
+    
+    <form id="frm">
+      <fieldset>
+        <legend>주소록</legend>
+          <textarea name="txt" id="txt" cols="30" rows="10"></textarea><br>
+          <input type="submit" id="q" value="submit">
+        </fieldset>
+    </form>
+    
+    <script>
+    var address=["ryan","email:herkas413@naver.com"];
+        
+        var q = document.getElementById('frm');
+        
+        function addr_search(event){
+            var textarea=q.txt;
+            //textarea
+            textarea.value='이름/주소\n';
+            textarea.value+=address[0]+','+address[1]+'\n';
+        }
+    
+        q.addEventListener('submit',function(event){
+       
+            event.preventDefault();
+            //addr_search()
+                               });
+    
+    
+    </script>
+    </body>
+</html>

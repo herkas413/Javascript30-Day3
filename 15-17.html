@@ -1,0 +1,36 @@
+<!doctype html>
+<html>
+    
+    <head>
+<title>jQuery</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript"></script>
+        
+    </head>
+<body>
+    <button id="btn" style="padding: 10px;">click</button>
+    
+    <script>
+     $(function(){
+        $('#btn').on('mouseenter mouseleave',function(e){
+           
+            if(e.type=='mouseenter'){
+            $(this).css('border-radius','10px');    
+            }
+            if(e.type=='mouseleave'){
+            $(this).css('border-radius','0px');
+            
+            }
+            
+            
+        });
+         
+         
+     });
+    
+    </script>
+    
+    
+    </body>
+    
+</html>

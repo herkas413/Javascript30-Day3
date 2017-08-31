@@ -1,0 +1,31 @@
+<!doctype html>
+<html>
+    
+    <head>
+<title>jQuery</title>
+<script type="text/javascript" src="http://ajax.googleapis.com/ajax/libs/jquery/1.7.1/jquery.min.js"></script>
+<script type="text/javascript"></script>
+        
+    </head>
+<body>
+    <h3>그래프를 클릭</h3>
+    <progress min=0 max=100 value=0></progress>
+    <span id="info"></span>
+    
+    <script>
+      $(function(){
+          var val = 0;
+          
+          $('progress').on('click',function(){
+              $('#info').html(val);
+              if(val<100){ 
+                  val += 10;
+              }
+              $(this).val(val);
+
+          });
+      });
+    
+    </script>
+    </body>
+</html>
